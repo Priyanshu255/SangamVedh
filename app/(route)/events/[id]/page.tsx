@@ -16,7 +16,7 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
 
   return (
     <>
-    <section className="flex justify-center bg-primary-50 bg-dotted-pattern bg-contain">
+    <section className="flex justify-center bg-gradient-to-br from-black to-blue-900 text-blue-100">
       <div className="grid grid-cols-1 md:grid-cols-2 2xl:max-w-7xl">
         <Image 
           src={event.imageUrl}
@@ -31,11 +31,11 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
             <h2 className='h2-bold'>{event.title}</h2>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-              <div className="flex gap-3">
-                <p className="p-bold-20 rounded-full bg-green-500/10 px-5 py-2 text-green-700">
+              <div className="flex items-center gap-3">
+                <p className="p-bold-20 rounded-full bg-green-500/10 px-7 py-1 text-green-700">
                   {event.isFree ? 'FREE' : `₹ ${event.price}`}
                 </p>
-                <p className="p-medium-16 rounded-full bg-grey-500/10 px-4 py-2.5 text-grey-500">
+                <p className="p-medium-16 rounded-full bg-grey-500/10 px-6 py-2 text-grey-500">
                   {event.category.name}
                 </p>
               </div>
@@ -80,7 +80,7 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
     </section>
 
     {/* EVENTS with the same category */}
-    <section className="wrapper my-8 flex flex-col gap-8 md:gap-12">
+    <section className="wrapper py-8 flex flex-col gap-8 md:gap-12 bg-gradient-to-br from-black to-blue-900 text-blue-200">
       <h2 className="h2-bold">Related Events</h2>
 
       <Collection 

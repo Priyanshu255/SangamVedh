@@ -7,14 +7,14 @@ import MobileNav from "./MobileNav"
 
 const Header = () => {
   return (
-    <header className="w-full border-b md:px-10">
+    <header className="w-full  md:px-10 bg-gradient-to-br from-black from-10% to-blue-950 to-90%">
       <div className="wrapper flex items-center justify-between">
-        <Link href="/" className="w-36">
+        <Link href="/" className="md:pl-5">
           {/* <Image 
             src="/assets/images/logo.svg" width={128} height={38}
             alt="Evently logo" 
           /> */}
-          <h1 className="font-extrabold text-2xl">SangamVedh</h1>
+          <h1 className="font-extrabold text-xl text-blue-200">SangamVedh</h1>
         </Link>
 
         <SignedIn>
@@ -29,7 +29,7 @@ const Header = () => {
             <MobileNav />
           </SignedIn>
           <SignedOut>
-            <Button asChild className="rounded-full" size="lg">
+            <Button asChild className="rounded-full bg-blue-900 shadow-lg" size="lg">
               <Link href="/sign-in">
                 Login
               </Link>
