@@ -206,15 +206,15 @@ body {
 
   /* SHADCN OVERRIDES */
   .select-field {
-    @apply w-full bg-grey-50 h-[54px] placeholder:text-grey-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;
+    @apply w-full bg-grey-50/5 h-[54px] placeholder:text-grey-400 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent text-white !important;
   }
 
   .input-field {
-    @apply bg-grey-50 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-500 rounded-full p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent !important;
+    @apply bg-grey-50/5 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-400 rounded-full p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent text-white !important;
   }
 
   .textarea {
-    @apply bg-grey-50 flex flex-1 placeholder:text-grey-500 p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent !important;
+    @apply bg-grey-50/5 flex flex-1 placeholder:text-grey-400 p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent text-white !important;
   }
 
   .button {
@@ -256,6 +256,7 @@ body {
 /* ========================================== REACT-DATEPICKER STYLES */
 .datePicker {
   width: 100%;
+  color: white;
 }
 
 .react-datepicker__input-container input {

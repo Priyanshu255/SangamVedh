@@ -22,8 +22,8 @@ export default async function Home({ searchParams }: SearchParamProps) {
   return (
     <>
       {/* <section className="bg-primary-50 bg-dotted-pattern bg-contain py-5 md:py-10 md:px-20"> */}
-      <section className="bg-gradient-to-br from-black to-blue-900 py-5 md:py-10 md:px-20">
-        <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
+      <section className="bg-gradient-to-br from-black to-blue-900 py-5 md:py-20 md:px-[10rem] h-auto md:h-[calc(100vh-84px)] flex justify-center">
+        <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0 ">
           <div className="flex flex-col justify-center gap-8">
             <h1 className="font-medium md:text-lg text-white">Host, Connect, Celebrate: Your Events, Our Platform!</h1>
             <p className="p-regular-20 md:p-regular-24 text-white">Book and learn helpful tips from 3,168+ mentors in world-class companies with our global community.</p>
@@ -33,7 +33,6 @@ export default async function Home({ searchParams }: SearchParamProps) {
               </Link>
             </Button>
           </div>
-
           <Image 
             src="/assets/images/hero.png"
             alt="hero"

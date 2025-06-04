@@ -15,7 +15,7 @@ const Footer = () => {
           <h1 className="font-extrabold text-2xl">SangamVedh</h1>
         </Link>
 
-        <p>&#169; 2024 SangamVedh. All Rights reserved.</p>
+        <p>&#169; 2025 SangamVedh. All Rights reserved.</p>
       </div>
     </footer>
   )
